@@ -126,6 +126,10 @@ a {
   cursor: pointer;
 }
 
+.lightMode a {
+  color: #393939;
+}
+
 a:visited {
   text-decoration: none;
 }

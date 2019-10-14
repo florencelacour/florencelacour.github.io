@@ -1,8 +1,29 @@
 <template>
-  <div class="container">
-    <router-view />
+  <div :class="{ darkMode: isDarkMode, lightMode: !isDarkMode }">
+    <Toggle>hello</Toggle>
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Toggle from '@/components/Toggle.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Toggle,
+  },
+
+  data: function() {
+    return {
+      isDarkMode: true,
+    };
+  },
+};
+</script>
 
 <style>
 @import '~sanitize.css';
@@ -13,22 +34,21 @@
 
 body {
   font-family: 'Open Sans', 'Helvetica', sans-serif;
-  color: #dbdbdb;
-  background-color: #393939;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 40px;
 }
 
 @media (max-width: 900px) {
-    body {
-      margin: 0 20px 0 20px;
-    }
+  .darkMode,
+  .lightMode {
+    padding: 0 20px 40px 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    body {
-      margin: 0 10px 0 10px;
-    }
+  .darkMode,
+  .lightMode {
+    padding: 0 10px 40px 10px;
+  }
 }
 
 body::before {
@@ -41,9 +61,9 @@ body::before {
 }
 
 @media (max-width: 900px) {
-    body::before {
-      left: 0;
-    }
+  body::before {
+    left: 0;
+  }
 }
 
 .italic {
@@ -53,6 +73,21 @@ body::before {
 .container {
   max-width: 850px;
   margin: 0 auto;
+}
+
+.darkMode,
+.lightMode {
+  padding-bottom: 40px;
+}
+
+.darkMode {
+  color: #dbdbdb;
+  background-color: #393939;
+}
+
+.lightMode {
+  color: #393939;
+  background-color: #ffffff;
 }
 </style>
 
