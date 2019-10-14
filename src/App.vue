@@ -20,15 +20,15 @@ body {
 }
 
 @media (max-width: 900px) {
-    body {
-      margin: 0 20px 0 20px;
-    }
+  body {
+    margin: 0 20px 0 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    body {
-      margin: 0 10px 0 10px;
-    }
+  body {
+    margin: 0 10px 0 10px;
+  }
 }
 
 body::before {
@@ -41,9 +41,9 @@ body::before {
 }
 
 @media (max-width: 900px) {
-    body::before {
-      left: 0;
-    }
+  body::before {
+    left: 0;
+  }
 }
 
 .italic {

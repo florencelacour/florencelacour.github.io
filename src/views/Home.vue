@@ -9,6 +9,15 @@
         <em>Florence</em>.
       </p>
       <p>
+        Actuellement, je suis
+        <em>responsable de l’expérience utilisateur</em> chez
+        <a href="https://www.mieuxplacer.com" target="_blank">Mieuxplacer.com</a> depuis plus de deux ans. Avant ça, je travaillais chez
+        <a
+          href="https://www.cdiscount.com"
+          target="_blank"
+        >Cdiscount</a>, sur le mobile.
+      </p>
+      <p>
         Pour me résumer en un mot, je dirais que je suis
         <em>curieuse</em>.
         <br />Je suis curieuse des gens, de leurs attentes, de leurs envies et de ce qu’ils pensent avoir comme besoins. C'est ce qui m'anime au quotidien et m'aide à faire mon métier correctement : créer des produits
@@ -18,7 +27,6 @@
         Je pense qu’il est très important d’avoir une vision centrée produit, c’est la raison pour laquelle je m’intéresse de près au
         <em>product management</em> (et je serais ravie d’en discuter !).
       </p>
-      <h2>Comme tu n’es pas tombé(e) ici par hasard, je te laisse quelques trucs à regarder.</h2>
     </section>
 
     <section class="cards">
@@ -56,15 +64,6 @@
     </section>
 
     <section>
-      <p>
-        Actuellement, je suis
-        <em>responsable de l’expérience utilisateur</em> chez
-        <a href="https://www.mieuxplacer.com" target="_blank">Mieuxplacer.com</a> depuis plus de deux ans. Avant ça, je travaillais chez
-        <a
-          href="https://www.cdiscount.com"
-          target="_blank"
-        >Cdiscount</a>, sur le mobile.
-      </p>
       <p class="asterisque">
         <em>*</em> J’ai fait le choix de me lancer dans une nouvelle techno, car je trouve son fonctionnement très intéressant : Vue.js. Et aussi parce que j’aime me lancer de nouveaux challenges.
       </p>
@@ -104,7 +103,6 @@ h2 {
   font-family: 'Playfair Display', 'Helvetica', sans-serif;
   font-size: 18px;
   font-weight: normal;
-  background-color: black;
   margin: 40px 0 30px 0;
 }
 
@@ -117,13 +115,12 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px -10px 40px -10px;
+  margin: 30px -10px 40px -10px;
 }
 
 a {
   font-weight: bold;
-  text-decoration: none;
-  color: #dbdbdb;
+  color: #ffffff;
   cursor: pointer;
 }
 

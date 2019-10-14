@@ -78,16 +78,15 @@ img {
 }
 
 @media (max-width: 750px) {
-    div {
-      width: 500px;
-      margin-right: 20px;
-    }
+  div {
+    width: 500px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    div {
-      width: calc(100% - 20px);
-    }
+  div {
+    width: calc(100% - 20px);
+  }
 }
-
 </style>
