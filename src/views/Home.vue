@@ -104,6 +104,7 @@ h2 {
   font-family: 'Playfair Display', 'Helvetica', sans-serif;
   font-size: 18px;
   font-weight: normal;
+  background-color: black;
   margin: 40px 0 30px 0;
 }
 
