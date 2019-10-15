@@ -1,14 +1,16 @@
 <template>
-  <div :style="{ backgroundColor: background }">
+  <a class="block" :href="url" target="_blank">
     <h3>{{ title }}</h3>
-    {{ description }}
+    <h4 class="details">{{ description }}</h4>
     <br />
-    <a :href="url" target="_blank" class="cta">
+    <p class="cta">
       {{ cta }}
       <img class="arrow" src="/arrow.svg" alt="flèche pour cliquer sur le lien" />
-    </a>
-  </div>
+    </p>
+  </a>
 </template>
+
+
 
 <script>
 export default {
@@ -27,10 +29,6 @@ export default {
       type: String,
       required: true,
     },
-    background: {
-      type: String,
-      required: true,
-    },
     url: {
       type: String,
       required: true,
@@ -40,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+.block {
   width: calc(50% - 20px);
   flex-shrink: 0;
   flex-grow: 0;
@@ -49,6 +47,8 @@ div {
   padding: 30px;
   border-radius: 3px;
   box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.1);
+  background-color: white;
+  text-decoration: none;
 }
 
 h3 {
@@ -57,22 +57,26 @@ h3 {
   margin: 0 0 10px 0;
 }
 
-a {
+.details {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.cta {
   font-weight: bold;
   display: inline-flex;
   align-items: center;
-  margin-top: 15px;
   text-decoration: none;
   color: #393939;
   cursor: pointer;
 }
 
-a:visited {
+.cta:visited {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.block:hover {
+  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.247);
 }
 
 img {
@@ -80,14 +84,14 @@ img {
 }
 
 @media (max-width: 900px) {
-  div {
+  .block {
     width: 500px;
     margin: 10px auto;
   }
 }
 
 @media (max-width: 550px) {
-  div {
+  .block {
     width: calc(100% - 20px);
   }
 }

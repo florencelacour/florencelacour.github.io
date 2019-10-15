@@ -29,13 +29,12 @@
       </p>
     </section>
 
-    <div class="bckg-cards">
+    <div>
       <section class="cards">
         <Card
           title="Parcours"
           description="En savoir plus sur ma vie professionnelle, mes compétences ou encore mes diplômes."
           cta="Télécharger mon CV"
-          background="#FFFFFF"
           url="/CV-Florence-Lacour.pdf"
         ></Card>
 
@@ -43,7 +42,6 @@
           title="Vision UX"
           description="Feuilleter un livre blanc sur ma vision de l’expérience utilisateur et le métier d’UX designer."
           cta="Ouvrir le PDF de Discutons UX"
-          background="#FFFFFF"
           url="http://discutons-ux.com/pdf/DiscutonsUX.pdf"
         ></Card>
 
@@ -51,7 +49,6 @@
           title="Daily UI"
           description="Suivre mon avancée sur le Daily UI Challenge, soit 100 jours de création d’interface (en cours)."
           cta="Voir mon profil Dribbble"
-          background="#FFFFFF"
           url="https://dribbble.com/FlorenceLacour"
         ></Card>
 
@@ -59,7 +56,6 @@
           title="Contact"
           description="Me contacter pour un workshop UX/DEV... Ou pour n'importe quel autre sujet."
           cta="Me contacter sur Linkedin"
-          background="#FFFFFF"
           url="https://www.linkedin.com/in/florencelacour/"
         ></Card>
       </section>
@@ -139,12 +135,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 50px 0;
-  max-width: 770px;
-}
-
-.bckg-cards {
-  background-color: #fff9f7;
+  max-width: 790px;
 }
 
 a {
