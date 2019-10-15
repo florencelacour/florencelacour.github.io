@@ -47,6 +47,8 @@ div {
   color: #393939;
   margin: 10px;
   padding: 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.1);
 }
 
 h3 {
@@ -77,10 +79,10 @@ img {
   margin-left: 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   div {
     width: 500px;
-    margin-right: 20px;
+    margin: 10px auto;
   }
 }
 

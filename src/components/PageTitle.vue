@@ -21,10 +21,10 @@ export default {
 
 <style scoped>
 h1 {
-  font-family: 'Playfair Display', 'Helvetica', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 40px;
-  margin-top: -5px;
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 40px;
 }
 </style>

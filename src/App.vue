@@ -8,27 +8,14 @@
 @import '~sanitize.css';
 @import '~sanitize.css/typography.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 
 body {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
-  color: #dbdbdb;
-  background-color: #393939;
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  color: #363636;
+  background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 40px;
-}
-
-@media (max-width: 900px) {
-  body {
-    margin: 0 20px 0 20px;
-  }
-}
-
-@media (max-width: 550px) {
-  body {
-    margin: 0 10px 0 10px;
-  }
 }
 
 body::before {
@@ -51,8 +38,7 @@ body::before {
 }
 
 .container {
-  max-width: 850px;
-  margin: 0 auto;
+  background-color: #ffffff;
 }
 </style>
 

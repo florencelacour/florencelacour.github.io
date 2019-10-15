@@ -1,69 +1,71 @@
 <template>
   <div>
-    <p class="useless-title">Bienvenue</p>
-    <PageTitle title="Bienvenue sur mon portfolio, en cours de construction*" />
+    <section class="presentation">
+      <PageTitle title="Portfolio de Florence Lacour" />
+      <p class="useless-title">En cours de construction*</p>
 
-    <section>
       <p>
         Moi, c’est
-        <em>Florence</em>.
-      </p>
-      <p>
-        Actuellement, je suis
-        <em>responsable de l’expérience utilisateur</em> chez
-        <a href="https://www.mieuxplacer.com" target="_blank">Mieuxplacer.com</a> depuis plus de deux ans. Avant ça, je travaillais chez
-        <a
-          href="https://www.cdiscount.com"
-          target="_blank"
-        >Cdiscount</a>, sur le mobile.
+        <strong>Florence</strong>.
       </p>
       <p>
         Pour me résumer en un mot, je dirais que je suis
-        <em>curieuse</em>.
+        <strong>curieuse</strong>.
         <br />Je suis curieuse des gens, de leurs attentes, de leurs envies et de ce qu’ils pensent avoir comme besoins. C'est ce qui m'anime au quotidien et m'aide à faire mon métier correctement : créer des produits
-        <em>user-centric</em>.
+        <strong>user-centric</strong>.
       </p>
       <p>
         Je pense qu’il est très important d’avoir une vision centrée produit, c’est la raison pour laquelle je m’intéresse de près au
-        <em>product management</em> (et je serais ravie d’en discuter !).
+        <strong>product management</strong> (et je serais ravie d’en discuter !).
+      </p>
+
+      <p>
+        Actuellement @
+        <a href="https://www.mieuxplacer.com" target="_blank">Mieuxplacer.com</a> (Web B2C & B2B) | Précédemment @
+        <a
+          href="https://www.cdiscount.com"
+          target="_blank"
+        >Cdiscount</a> (Mobile B2C).
       </p>
     </section>
 
-    <section class="cards">
-      <Card
-        title="Parcours"
-        description="Si tu veux en savoir un peu plus sur ma vie professionnelle, mes compétences ou encore mes diplômes."
-        cta="Télécharger mon CV"
-        background="#FFE3DB"
-        url="/CV-Florence-Lacour.pdf"
-      ></Card>
+    <div class="bckg-cards">
+      <section class="cards">
+        <Card
+          title="Parcours"
+          description="En savoir plus sur ma vie professionnelle, mes compétences ou encore mes diplômes."
+          cta="Télécharger mon CV"
+          background="#FFFFFF"
+          url="/CV-Florence-Lacour.pdf"
+        ></Card>
 
-      <Card
-        title="Vision UX"
-        description="Si tu souhaites feuilleter mon livre blanc sur ma vision de l’expérience utilisateur et le métier d’UX designer."
-        cta="Ouvrir le PDF de Discutons UX"
-        background="#DDE8FE"
-        url="http://discutons-ux.com/pdf/DiscutonsUX.pdf"
-      ></Card>
+        <Card
+          title="Vision UX"
+          description="Feuilleter un livre blanc sur ma vision de l’expérience utilisateur et le métier d’UX designer."
+          cta="Ouvrir le PDF de Discutons UX"
+          background="#FFFFFF"
+          url="http://discutons-ux.com/pdf/DiscutonsUX.pdf"
+        ></Card>
 
-      <Card
-        title="Daily UI"
-        description="Si tu es intéressé(e) pour suivre mon avancée sur le Daily UI Challenge, soit 100 jours de création d’interface (en cours)."
-        cta="Voir mon profil Dribbble"
-        background="#F9F2C7"
-        url="https://dribbble.com/FlorenceLacour"
-      ></Card>
+        <Card
+          title="Daily UI"
+          description="Suivre mon avancée sur le Daily UI Challenge, soit 100 jours de création d’interface (en cours)."
+          cta="Voir mon profil Dribbble"
+          background="#FFFFFF"
+          url="https://dribbble.com/FlorenceLacour"
+        ></Card>
 
-      <Card
-        title="Contact"
-        description="Si tu représentes une école et que tu es intéressé(e) par les workshops UX/DEV que je donne. Ou pour tout autre sujets."
-        cta="Me contacter sur Linkedin"
-        background="#D2FFF4"
-        url="https://www.linkedin.com/in/florencelacour/"
-      ></Card>
-    </section>
+        <Card
+          title="Contact"
+          description="Me contacter pour un workshop UX/DEV... Ou pour n'importe quel autre sujet."
+          cta="Me contacter sur Linkedin"
+          background="#FFFFFF"
+          url="https://www.linkedin.com/in/florencelacour/"
+        ></Card>
+      </section>
+    </div>
 
-    <section>
+    <section class="presentation">
       <p class="asterisque">
         <em>*</em> J’ai fait le choix de me lancer dans une nouvelle techno, car je trouve son fonctionnement très intéressant : Vue.js. Et aussi parce que j’aime me lancer de nouveaux challenges.
       </p>
@@ -92,11 +94,31 @@ export default {
 </script>
 
 <style>
+.presentation {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+@media (max-width: 900px) {
+  .presentation {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .presentation {
+    margin: 0 10px 0 10px;
+  }
+}
+
 .useless-title {
-  font-family: 'Playfair Display', 'Helvetica', sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 50px 0 0 0;
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: -5px;
 }
 
 h2 {
@@ -109,18 +131,25 @@ h2 {
 p {
   font-size: 16px;
   margin: 0 0 15px 0;
-  line-height: 1.8;
+  line-height: 1.4;
+  max-width: 770px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px -10px 40px -10px;
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 770px;
+}
+
+.bckg-cards {
+  background-color: #fff9f7;
 }
 
 a {
   font-weight: bold;
-  color: #ffffff;
+  color: #f4856a;
   cursor: pointer;
 }
 
