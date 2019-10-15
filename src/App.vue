@@ -7,14 +7,13 @@
 <style>
 @import '~sanitize.css';
 @import '~sanitize.css/typography.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 
 body {
   font-family: 'Work Sans', 'Helvetica', sans-serif;
   color: #363636;
-  background-color: #fafafa;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
