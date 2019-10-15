@@ -93,7 +93,7 @@ export default {
 .presentation {
   max-width: 770px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 @media (max-width: 900px) {
@@ -113,7 +113,7 @@ export default {
   letter-spacing: -1px;
   font-size: 18px;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: -5px;
 }
 
@@ -129,6 +129,10 @@ p {
   margin: 0 0 15px 0;
   line-height: 1.4;
   max-width: 770px;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
 }
 
 .cards {

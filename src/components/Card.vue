@@ -46,7 +46,7 @@ export default {
   margin: 10px;
   padding: 30px;
   border-radius: 3px;
-  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.1);
+  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.247);
   background-color: white;
   text-decoration: none;
 }
@@ -76,7 +76,7 @@ h3 {
 }
 
 .block:hover {
-  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.247);
+  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.363);
 }
 
 img {
