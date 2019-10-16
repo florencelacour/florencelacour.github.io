@@ -29,7 +29,7 @@
       </p>
     </section>
 
-    <div>
+    <div class="cards-block">
       <section class="cards">
         <Card
           title="Parcours"
@@ -133,6 +133,11 @@ p {
 
 p:last-of-type {
   margin-bottom: 0;
+}
+
+.cards-block {
+  background-color: #f8fafe;
+  padding: 30px 0;
 }
 
 .cards {

@@ -18,12 +18,21 @@ body {
 }
 
 body::before {
-  height: 8px;
+  height: 10px;
   width: 100%;
   content: '';
-  background-color: #f4856a;
+  background-color: #f4866ab7;
   position: fixed;
   top: 0;
+}
+
+body::after {
+  height: 10px;
+  width: 100%;
+  content: '';
+  background-color: #f4866ab7;
+  position: fixed;
+  bottom: 0;
 }
 
 @media (max-width: 900px) {

@@ -46,9 +46,13 @@ export default {
   margin: 10px;
   padding: 30px;
   border-radius: 3px;
-  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.247);
   background-color: white;
   text-decoration: none;
+  border: 2px solid #f3f5f7;
+}
+
+.block:hover {
+  border: 2px solid #e2e8ee;
 }
 
 h3 {
@@ -73,10 +77,6 @@ h3 {
 
 .cta:visited {
   text-decoration: none;
-}
-
-.block:hover {
-  box-shadow: 2px 2px 20px rgba(161, 149, 149, 0.363);
 }
 
 img {
